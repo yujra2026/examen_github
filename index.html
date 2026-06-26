@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Blog Personal</title>
-    <!-- Conectamos el archivo CSS -->
-    <link rel="stylesheet" href="css/stile.css">
+    <title>Dashboard del Estudiante</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <!-- Título principal: usamos id porque es único -->
-    <h1 id="titulo-principal">Mi Blog Personal</h1>
+    <header class="flex-container">
+        <div class="flex-item logo">
+            Dashboard
+        </div>
 
-    <!-- Párrafos: usamos class porque tienen el mismo estilo -->
-    <p class="texto-descripcion">Bienvenido a mi espacio en internet, donde comparto mis cosas y me conecto con el mundo.</p>
-    <p class="texto-descripcion">En este blog voy a publicar contenido, ideas y todo lo que quiera compartir con ustedes.</p>
+        <div class="flex-item">
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Materias</a></li>
+                <li><a href="#">Notas</a></li>
+                <li><a href="#">Perfil</a></li>
+            </ul>
+        </div>
+    </header>
 
-    <!-- Imagen: usamos class para darle estilo a todas las imágenes -->
-    <img src="img/1.png" alt="Imagen de mi blog" class="imagen-blog">
-    <img src="img/2.png" alt="Segunda imagen" class="imagen-blog">
+    <main>
+        <h1>Dashboard del Estudiante</h1>
+
+        <section class="grid">
+            <div class="card">Matemáticas</div>
+            <div class="card">Programación Web</div>
+            <div class="card">Física</div>
+            <div class="card">Inglés</div>
+        </section>
+    </main>
 
 </body>
 </html>
